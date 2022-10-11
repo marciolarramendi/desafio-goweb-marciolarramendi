@@ -18,7 +18,6 @@ func main() {
 	if err != nil {
 		panic("Couldn't load tickets")
 	}
-	//db := store.New(store.FileType, "./tickets.csv")
 	repo := tickets.NewRepository(list)
 	service := tickets.NewService(repo)
 
